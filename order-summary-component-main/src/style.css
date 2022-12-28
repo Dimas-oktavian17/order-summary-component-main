@@ -1,0 +1,128 @@
+/*default*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 130vh;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+/*m-left 27 rem ,m-top 4rem*/
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -59%);
+  max-width: 450px;
+  background-color: white;
+
+  overflow: hidden;
+  border-radius: 20px;
+}
+.title {
+  padding-top: 1rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+.text {
+  color: hsl(224, 23%, 55%);
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+.price_box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin: 0px 50px 0px 50px;
+}
+.price_music {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.price_money {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 0rem 1rem;
+}
+.price {
+  padding-top: 10px;
+  color: hsl(226, 14%, 70%);
+}
+.price_change {
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7rem;
+}
+.btn button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  height: 3rem;
+  width: 22rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 8px 10px 0px hsl(245deg 67% 78%);
+}
+.cancel a {
+  color: hsl(226, 14%, 70%);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0px 2rem 0px;
+}
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: auto;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .price_box {
+    margin: 0px 20px 0px 20px;
+  }
+  .price_change {
+    padding-left: 3rem;
+  }
+  .btn button {
+    width: 17rem;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .text {
+    font-size: 17px;
+    width: 310px;
+  }
+}
